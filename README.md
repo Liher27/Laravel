@@ -74,3 +74,5 @@ npm run build
 
 Con estos comandos, habremos generado una plantilla que podremos utilizar a lo largo de nuestra pagina web. Para ver mas detalles de la composicion de nuestra plantilla, podemos ir al archivo en la ruta  **resources/views/layouts/app.blade.php**.
 Para usar esta plantilla, deberemos cambiar el archivo de la vista que queramos que incluya esta estructura. Por ejemplo, para ver la vista modificada de show.blade.php
+
+## Metodos CRUD
