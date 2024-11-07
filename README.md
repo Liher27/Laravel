@@ -48,7 +48,7 @@ Haremos uso del archivo que se encuentra en **routes/web.php**. En este archivo 
 php artisan route:list
 ```
 
-#Bootstrap
+# Bootstrap
 
 Ahora nos centraremos en la instalacion de bootstrap para Laravel, un servicio que antiguamente era nativo de Laravel, pero ya no. Para instalarlo, neceistaremos ejecutar los siguientes comandos: 
 
