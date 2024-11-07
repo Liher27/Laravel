@@ -67,7 +67,7 @@ Instala las dependencias indicadas en el primer comando
 npm install
 ```
 
-ejecuta la acción “build” indicada en el fichero package.json
+ejecuta la acción “build” indicada en el fichero package.json. Este comando será necesario siempre que queramos cambiar los assets de la plantilla 
 ```bash
 npm run build
 ```
