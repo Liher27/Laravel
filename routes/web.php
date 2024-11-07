@@ -13,3 +13,6 @@ Route::controller(PostController::class)->group(function () {
     Route::get('/posts/{post}', 'show')->name('posts.show');
  });
     
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
