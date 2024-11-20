@@ -20,7 +20,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('posts.create');
+
     }
 
     /**
@@ -28,12 +29,12 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-    $post = new Post();
-    $post->titulo = $request->titulo;
-    $post->texto = $request->texto;
-    $post->publicado = $request->has('publicado');
-    $post->save();
-    return redirect()->route('posts.index');
+        $post = new Post();
+        $post->titulo = $request->titulo;
+        $post->texto = $request->texto;
+        $post->publicado = $request->has('publicado');
+        $post->save();
+        return redirect()->route('posts.index');
     }
 
     /**
@@ -49,7 +50,6 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-
         return view('posts.edit',['post'=>$post]);
     }
 
@@ -58,7 +58,6 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-
         $post->titulo = $request->titulo;
         $post->texto = $request->texto;
         $post->publicado = $request->has('publicado');
@@ -71,6 +70,7 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        //
+        $post->delete();
+        return redirect()->route('posts.index');
     }
 }

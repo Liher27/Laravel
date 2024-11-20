@@ -6,12 +6,21 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+           
             <a
             href="{{route('posts.index')}}"
              class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
             >
-           <h1>Hola </h1>
+           <h1>Ver posts </h1>
             </a>
+           
+            <a
+            href="{{route('posts.create')}}"
+             class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
+            >
+           <h1>Crear post </h1>
+            </a>
+           
         </div>
     </div>
 </div>
