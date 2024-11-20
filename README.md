@@ -76,3 +76,9 @@ Con estos comandos, habremos generado una plantilla que podremos utilizar a lo l
 Para usar esta plantilla, deberemos cambiar el archivo de la vista que queramos que incluya esta estructura. Por ejemplo, para ver la vista modificada de show.blade.php
 
 ## Metodos CRUD
+
+Estos metodos sirven para crear posts, editarlos o borrarlos. Ambos tres pueden verse en los apartados de postController en los metodos: Destroy, Put, Edit y Update.
+
+## Middleware
+
+Este sistema de autenticacion nos permite hacer que multiples de nuestras rutas necesiten una autenticacion. Para ello, deberemos de modificar las rutas en el archivo web.php. Además, podemos tener rutas a las que queramos acceder sin necesidad de estar logeados en la pagina web. Para ello, tendremos que marcar explicitamente en este mismo archivo que rutas no necesitaran middleware.
