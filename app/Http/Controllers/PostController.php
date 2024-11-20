@@ -42,13 +42,14 @@ class PostController extends Controller
     public function show(Post $post){
         return view('posts.show',['post'=>$post]);
     }
-        
+
 
     /**
      * Show the form for editing the specified resource.
      */
     public function edit(Post $post)
     {
+
         return view('posts.edit',['post'=>$post]);
     }
 
@@ -57,6 +58,7 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
+
         $post->titulo = $request->titulo;
         $post->texto = $request->texto;
         $post->publicado = $request->has('publicado');

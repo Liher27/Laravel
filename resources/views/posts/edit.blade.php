@@ -26,4 +26,6 @@ value="{{$post->titulo}}"/>
 <button type="submit" class="btn btn-primary" name="">Actualizar</button>
 </form>
 </div>
+
 @endsection
+
