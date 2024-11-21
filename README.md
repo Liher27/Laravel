@@ -82,3 +82,7 @@ Estos metodos sirven para crear posts, editarlos o borrarlos. Ambos tres pueden 
 ## Middleware
 
 Este sistema de autenticacion nos permite hacer que multiples de nuestras rutas necesiten una autenticacion. Para ello, deberemos de modificar las rutas en el archivo web.php. Además, podemos tener rutas a las que queramos acceder sin necesidad de estar logeados en la pagina web. Para ello, tendremos que marcar explicitamente en este mismo archivo que rutas no necesitaran middleware.
+
+## Relacionando modelos
+
+Habrán veces que nuestros objetos tengan como atributo otros objetos, y para ello, será necesario relacionarlos entre ellos en laravel. Primero, crearemos el modelo del objeto al igual que se hizo anteriormente. Después, será necesario hacer un migrate y poblar la base de datos con la informacion que queramos. Tras ello, habrá que relacionarlos en los modelos en este caso de Comentario, y de Post, diciendole a los modelos respectivamente, o HasMany, o BelongsTo. Además serán necesarias pequeñas modificaciones en la vista de los comentarios y en el controlador de posts, para guardar dentro del objeto Post los Comentarios que tenga relacionados en la base de datos.

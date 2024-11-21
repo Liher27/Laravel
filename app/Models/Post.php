@@ -3,8 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Post extends Model
 {
-    //
+    public function comentarios(): HasMany {
+        return $this->hasMany(Comentario::class);
+        }
 }
